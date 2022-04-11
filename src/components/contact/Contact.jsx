@@ -16,7 +16,13 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log('form Data: ',formRef.current)
+        const { user_name, user_subject, user_email, message } = formRef.current;
+        console.log('user_name : ', user_name.value)
+        console.log('user_subject : ', user_subject.value)
+        console.log('user_email : ', user_email.value)
+        console.log('message : ', message.value)
+        alert("Response Submited, thank you!")
+        // setDone(true);
 
         // emailjs.sendForm(
         //     "service_rrvnzco",
@@ -64,7 +70,7 @@ function Contact() {
                         <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder='Email' name='user_email' required/>
                         <textarea style={{ backgroundColor: darkMode && "#333" }} name="message" rows="5" placeholder='Message' required></textarea>
                         <button>Submit</button>
-                        {done && "Response Submited, thank you!"}
+                        {/* {done && alert("Response Submited, thank you!")} */}
                     </form>
                 </div>
             </div>
