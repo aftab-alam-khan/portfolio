@@ -51,7 +51,7 @@ function Contact() {
                         </div>
                         <div className="c-info-item">
                             <img src={Email} alt="" className="c-icon" />
-                            choice0787@gmail.com
+                            <p><a href="mailto:choice0787@gmail.com">choice0787@gmail.com</a></p>
                         </div>
                         <div className="c-info-item">
                             <img src={Address} alt="" className="c-icon" />
